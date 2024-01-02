@@ -95,6 +95,7 @@ body {
   color: #525f7f;
   text-align: left;
   background-color: #1e1e2f;
+  scroll-behavior: smooth;
 }
 
 [tabindex="-1"]:focus {
@@ -4756,7 +4757,7 @@ input[type="button"].btn-block {
   background-color: #ffffff;
   background-clip: border-box;
   border: 0.0625rem solid rgba(34, 42, 66, 0.05);
-  border-radius: 0.2857rem;
+  border-radius: 0.2857rem; 
 }
 
 .card>hr {
@@ -15341,7 +15342,7 @@ table.tablesorter thead tr .headerSortDown {
 }
 
 .main-panel>.content {
-  padding: 78px 30px 30px 280px;
+  padding: 78px 30px 30px 150px;
   min-height: calc(100vh - 70px);
 }
 
@@ -17253,8 +17254,8 @@ Copyright (c) 2015 Daniel Eden
   background: #27293d;
   border: 0;
   position: relative;
-  width: 100%;
-  margin-bottom: 30px;
+  width: 80%;
+  margin: auto; 
   box-shadow: 0 1px 20px 0px rgba(0, 0, 0, 0.1);
 }
 

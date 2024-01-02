@@ -89,6 +89,8 @@
             </ul>
         </div>
     </div>
+
+    <script src="https://black-dashboard-pro-laravel.creative-tim.com/black/js/plugins/bootstrap-selectpicker.js"></script>
     <script src="{{ asset('assets/js/core/jquery.min.js')}}"></script>
     <script src="{{ asset('assets/js/core/popper.min.js')}}"></script>
     <script src="{{ asset('assets/js/core/bootstrap.min.js')}}"></script>
