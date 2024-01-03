@@ -38,7 +38,7 @@ class ProductController extends Controller
         $product->price = $request->price;
         $product->qty = $request->qty;
         $product->save();
-
+     
         return redirect()->route("products.index")->with("success", "Products Added  Successfully! ");
     }
 

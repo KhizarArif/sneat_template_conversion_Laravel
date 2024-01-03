@@ -15319,7 +15319,7 @@ table.tablesorter thead tr .headerSortDown {
   position: relative;
   float: right;
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   border-top: 2px solid #e14eca;
   background: linear-gradient(#1e1e2f, #1e1e24);
   -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
@@ -15342,8 +15342,8 @@ table.tablesorter thead tr .headerSortDown {
 }
 
 .main-panel>.content {
-  padding: 78px 30px 30px 150px;
-  min-height: calc(100vh - 70px);
+  padding: 78px 30px 0px 150px;
+  min-height: calc(80vh - 70px);
 }
 
 .main-panel>.navbar {
