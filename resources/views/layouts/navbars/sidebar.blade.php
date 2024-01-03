@@ -27,12 +27,6 @@
                             </a>
                         </li>
                         <li>
-                            <a href="{{ route('user.index')  }}">
-                                <i class="tim-icons icon-bullet-list-67"></i>
-                                <p>{{ __('Products Management') }}</p>
-                            </a>
-                        </li>
-                        <li>
                             <a href="{{ route('categories.index')  }}">
                                 <i class="tim-icons icon-bullet-list-67"></i>
                                 <p>{{ __('Category Management') }}</p>
@@ -42,6 +36,12 @@
                             <a href="{{ route('subcategories.index')  }}">
                                 <i class="tim-icons icon-bullet-list-67"></i>
                                 <p>{{ __('Sub Category Management') }}</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{ route('products.index')  }}">
+                                <i class="tim-icons icon-bullet-list-67"></i>
+                                <p>{{ __('Products Management') }}</p>
                             </a>
                         </li>
                     </ul>

@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\ProductController;
 use App\Http\Controllers\SubCategoryController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -36,6 +37,18 @@ Route::group(["middleware" => "auth"], function () {
         Route::get('edit/{id}', [SubCategoryController::class, 'edit'])->name('subcategories.edit');
         Route::put('update/{id}', [SubCategoryController::class, 'update'])->name('subcategories.update');
     });
+
+
+    // Products Routes
+    Route::prefix('product')->group(function () {
+        Route::get('index', [ProductController::class, 'index'])->name('products.index');
+        Route::get('create', [ProductController::class, 'create'])->name('products.create');
+        Route::post('store', [ProductController::class, 'store'])->name('products.store');
+        Route::get('edit/{id}', [ProductController::class, 'edit'])->name('products.edit');
+        Route::put('update/{id}', [ProductController::class, 'update'])->name('products.update');
+        Route::get('getSubCategory', [ProductController::class, 'GetSubCategory'])->name('products.getsubcategory');
+    });
+
 });
 
 
